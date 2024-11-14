@@ -148,13 +148,15 @@ body:has(#sidebar.close) {
 
 @media (max-width: 800px) {
     body {
+        position: relative;
         grid-template-columns: 1fr;
         margin: 0;
-        height: 89vh;
+        height: 100vh;
+        z-index: 0;
     }
     main {
         padding: 2em 1em 60px 1em;
-        height: 89vh;
+        height: 91.5vh;
         overflow-x: scroll;
     }
     .container {
