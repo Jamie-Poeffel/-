@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jamie-Poeffel</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="sidebar">
+      <ul>
+        <li>
+          <span class="logo">Jamie-Poeffel</span>
+          <button id="toggle-btn" onclick="toggleSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+              />
+            </svg>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="skills.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-200v-80h320v80H320Zm10-120q-69-41-109.5-110T180-580q0-125 87.5-212.5T480-880q125 0 212.5 87.5T780-580q0 81-40.5 150T630-320H330Zm24-80h252q45-32 69.5-79T700-580q0-92-64-156t-156-64q-92 0-156 64t-64 156q0 54 24.5 101t69.5 79Zm126 0Z"
+              />
+            </svg>
+            <span>skills</span>
+          </a>
+        </li>
+        <li>
+          <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm200-80v-240H200v240h200Zm80 0h280v-240H480v240ZM200-520h560v-240H200v240Z"
+              />
+            </svg>
+            <span>dashboard</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+            </svg>
+          </button>
+          <ul class="sub-menu">
+            <div>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Description</a></li>
+              <li><a href="#">Previews</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a href="profile.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+              />
+            </svg>
+            <span>Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="skills">
+            <h1 class="sub-title">My <span>Skills</span></h1>
+  
+            <section>
+              <div class="container1" id="skills">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                  <div class="bar">
+                    <i class="bx bxl-html5" style="color: #c95d2e"></i>
+                    <div class="indfo">
+                      <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="bar">
+                    <i class="bx bxl-css3" style="color: #147bbc"></i>
+                    <div class="indfo">
+                      <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="bar">
+                    <i class="bx bxl-javascript" style="color: #c6ce29"></i>
+                    <div class="indfo">
+                      <span>javascript</span>
+                    </div>
+                    <div class="progress-line js">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="bar">
+                    <i class="bx bxl-vuejs" style="color: rgb(0, 187, 25)"></i>
+                    <div class="indfo">
+                      <span>vue.js</span>
+                    </div>
+                    <div class="progress-line vue">
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="container1">
+                  <h1 class="heading1">Professional Skills</h1>
+                  <div class="radial-bars">
+  
+                      <div class="radial-bar">
+                          <svg x="0px " y="0px" viewBox="0 0 200 200">
+                              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                          </svg>
+                          <div class="precentage">90%</div>
+                          <div class="text">Creativity</div>
+                      </div>
+                      <div class="radial-bar">
+                          <svg x="0px " y="0px" viewBox="0 0 200 200">
+                              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                          </svg>
+                          <div class="precentage">65%</div>
+                          <div class="text">Comunication</div>
+                      </div>
+                      <div class="radial-bar">
+                          <svg x="0px " y="0px" viewBox="0 0 200 200">
+                              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                          </svg>
+                          <div class="precentage">75%</div>
+                          <div class="text">Problem Solving</div>
+                      </div>
+                      <div class="radial-bar">
+                          <svg x="0px " y="0px" viewBox="0 0 200 200">
+                              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                          </svg>
+                          <div class="precentage">85%</div>
+                          <div class="text">Teamwork</div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+          </div>
+        </div>   
+      </main>
+      </div>
+    </main>
+  </body>
+</html>
