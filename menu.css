@@ -147,6 +147,9 @@ body:has(#sidebar.close) {
 }
 
 @media (max-width: 800px) {
+    nav {
+        position: fixed;
+    }
     body {
         position: relative;
         grid-template-columns: 1fr;
